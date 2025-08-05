@@ -1,5 +1,5 @@
 # 👋 About Me
-![Design](https://img.shields.io/badge/Design-HIGH-blue?style=flat-square)
+![Flow](https://img.shields.io/badge/System_Flow-ON-blue?style=flat-square)
 ![Security](https://img.shields.io/badge/Security-ON-critical?style=flat-square)
 ![Growth](https://img.shields.io/badge/Growth-ALWAYS-success?style=flat-square)
 
