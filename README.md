@@ -1,10 +1,9 @@
 # 👋 About Me
-![Code](https://img.shields.io/badge/I_Write-Code-0A0A0A?style=flat-square&logo=visualstudiocode&logoColor=blue)
-![Logs](https://img.shields.io/badge/Log_Tracking-Obsession-critical?style=flat-square&logo=logstash)
-![Sleep](https://img.shields.io/badge/Sleep_mode-OFF-red?style=flat-square&logo=coffeescript)
-![Growth](https://img.shields.io/badge/Growth_Mode-ON-green?style=flat-square&logo=chartdotjs)
-![Infra](https://img.shields.io/badge/AWS_Infrastructure-Self_Built-yellow?style=flat-square&logo=amazonaws)
-![Security](https://img.shields.io/badge/Security_Level-🛡️_HIGH-important?style=flat-square)
+![Design-Driven](https://img.shields.io/badge/Focus-Flow_Design-blue?style=flat-square)
+![Security-First](https://img.shields.io/badge/Security-Top_Priority-critical?style=flat-square)
+![Keep-Growing](https://img.shields.io/badge/Growth-Relentless-success?style=flat-square)
+
+
 
 안녕하세요, 흐름을 먼저 설계하고 끝까지 책임지는 백엔드 개발자 **안윤기**입니다.  
 저는 시스템의 신뢰는 '정확한 로직과 단단한 구조'에서 시작된다고 믿습니다.  
