@@ -138,12 +138,18 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 - 역할 분담 기반 개발 및 문서화 주도 (API 명세서, ERD 등)
 - 피드백 기반 응답 포맷 통일 (isAdmin, role)
 - 회의록/협업 툴 기반 커뮤니케이션 능동적 참여
+- aws 배포방법, readme 등 모든 내용 문서화 후 팀원에게 공유
 
 ### 🔗 링크
 
 - [GitHub](https://github.com/joyulbi/HALO_SHOP)  
-- [배포](http://43.202.189.108/)  
+- [관련 보안 테스트 문서정리1](https://github.com/joyulbi/HALO_SHOP/blob/main/%EB%B3%B4%EC%95%88%ED%85%8C%EC%8A%A4%ED%8A%B8%20%ED%88%B4%20%EC%82%AC%EC%9A%A9%20-%20%EC%95%88%EC%9C%A4%EA%B8%B0.md)
+- [관련 보안 테스트 문서정리2](https://github.com/joyulbi/HALO_SHOP/blob/main/%EB%B3%B4%EC%95%88%ED%85%8C%EC%8A%A4%ED%8A%B8%20(Linux%20Shell%20Script)%20-%20%EC%95%88%EC%9C%A4%EA%B8%B0.md)
+- [관련 보안 테스트 문서정리3](https://github.com/joyulbi/HALO_SHOP/blob/main/%EB%B3%B4%EC%95%88%ED%85%8C%EC%8A%A4%ED%8A%B8%20(Hydra%20%26%20ffuf)%20-%20%EC%95%88%EC%9C%A4%EA%B8%B0.md)
+- [배포](http://43.202.189.108/)
+- [배포 강의문서](https://github.com/yoon0416/document/blob/main/AWS_HALOSHOP.md)
 - [시연 영상](https://www.youtube.com/watch?v=Xm-JVtveUPE)
+
 
 
 
@@ -177,7 +183,12 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 - Soft delete 계정 정리 누락 → node-cron 기반 자동 제거 구현
 - FK 제약으로 인한 삭제 실패 → 트랜잭션 + CASCADE 처리
 
-### 🔗 링크
+###  협업 및 회고
+
+- 역할 분담 기반 개발 및 문서화 주도 (API 명세서, ERD 등)
+- aws 배포방법, readme 등 모든 내용 문서화 후 팀원에게 공유
+
+### 🔗 참고 문서
 
 - [GitHub](https://github.com/IN-P/HALO)
 
@@ -210,14 +221,18 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 - 로그 자동 수집 및 30일 보존 스케줄링
 - 구조적 보안 설계 + 외부 API 활용
 
+###  협업 및 회고
+
+- 역할 분담 기반 개발 및 문서화 주도 (API 명세서, ERD 등)
+- aws 배포방법, readme 등 모든 내용 문서화 후 팀원에게 공유
+
 ### 🔗 참고 문서
 
 - [보안 설계 문서](https://github.com/yoon0416/ssgpack/blob/main/시큐리티.md)
 - [트러블슈팅 문서](https://github.com/yoon0416/ssgpack/blob/main/트러블슈팅.md)
-- [문서 저장소](https://github.com/yoon0416/document)
 - [AWS 설정](https://github.com/yoon0416/ssgpack/blob/main/aws.md)
 - [시연 영상](https://youtu.be/pWBEOX9JKqc)
-
+- [문서 저장소](https://github.com/yoon0416/document)
 
 
 ---
