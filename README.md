@@ -33,8 +33,6 @@
 
 ## 🛠 기술 역량 (Tech Stack)
 
-[![기술스택](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact&hide=html)](https://github.com/anuraghazra/github-readme-stats)
-
 | 영역             | 기술 및 도구 |
 |------------------|-------------------------------------------------------------------------------------------------------------------|
 | **Backend**      | Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, Python, REST API, OAuth2, @PreAuthorize |
