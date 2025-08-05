@@ -66,13 +66,13 @@
 | Primary Key 조회     | `SELECT * FROM account WHERE id = ?`         | PK 컬럼은 기본적으로 인덱스가 걸림 → 빠른 탐색 가능                            | `O(log N)`   |
 | 정렬 없이 전체 탐색 | `SELECT * FROM account`                      | 인덱스를 사용하지 않고 전체 테이블을 순차 탐색 (Full Table Scan)         | `O(N)`       |
 
-- 🔍 B-Tree 인덱스란?
+-  B-Tree 인덱스란?
   - MySQL(InnoDB)의 기본 인덱스 구조.
   - 균형 잡힌 트리 구조로 되어 있어서, 검색 시 루트 노드 → 중간 노드 → 리프 노드까지 타고 내려가며 빠르게 탐색 가능.
   - 정렬된 상태로 저장되며, 범위 조건 검색에도 유리.
   - 평균 시간복잡도는 O(log N).
 
-- ❗ 인덱스가 없다면?
+-  인덱스가 없다면?
   - SELECT * FROM account처럼 인덱스를 타지 않으면, 테이블 처음부터 끝까지 한 줄씩 확인하는 선형 탐색이 됨.
   - 이 경우 시간복잡도는 O(N), 즉 데이터가 많아질수록 성능 급하락.
 
@@ -80,8 +80,8 @@
 
 | 사용 맥락        | 쿼리 예시                                   | 설명                  |
 | ------------ | --------------------------------------- | ------------------- |
-| 🔐 로그인 처리    | `SELECT * FROM account WHERE email = ?` | 이메일 인덱스 기반 빠른 탐색 사용 |
-| 👤 관리자 상세 조회 | `SELECT * FROM account WHERE id = ?`    | PK 탐색으로 즉시 조회 가능    |
+|  로그인 처리    | `SELECT * FROM account WHERE email = ?` | 이메일 인덱스 기반 빠른 탐색 사용 |
+|  관리자 상세 조회 | `SELECT * FROM account WHERE id = ?`    | PK 탐색으로 즉시 조회 가능    |
 
 
 </details>
@@ -98,7 +98,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 ---
 
-## 📌 Projects
+##  Projects
 
 
 ---
@@ -108,7 +108,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 **담당:** 회원/보안/인증 시스템 전담, EC2 인프라 구성, 자동 배포, 트러블슈팅 및 문서화  
 
-### 🧰 사용기술
+### 사용기술
 
 | 영역     | 기술 |
 |----------|------|
@@ -118,7 +118,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 | DB       | MySQL 8.x (Soft Delete, backup table, node-cron 기반 스케줄링) |
 | 보안도구 | Hydra, ffuf, TruffleHog, curl, Nikto 등 |
 
-### 📌 주요 기능
+###  주요 기능
 
 - 4중 인증 구조 (JWT + bcrypt / 세션 + Argon2)
 - 관리자 권한 분기 및 세션 강제 종료 기능
@@ -126,13 +126,13 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 - Shell Script 기반 자동 배포 (117s → 26s 단축)
 - 실전 보안 도구(ffuf, Hydra 등) 기반 공격 대응 구조 설계
 
-### 🔧 주요 트러블슈팅
+###  주요 트러블슈팅
 
 - 요청 폭주 → rate limiter + IP 차단
 - UTC 시간 설정 → `-Duser.timezone=Asia/Seoul`
 - 프론트 비효율적 빌드 반복 → 조건 분기 + 병렬 실행 최적화
 
-### 🤝 협업 및 회고
+###  협업 및 회고
 
 - 역할 분담 기반 개발 및 문서화 주도 (API 명세서, ERD 등)
 - 피드백 기반 응답 포맷 통일 (isAdmin, role)
@@ -153,7 +153,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 **담당:** 회원/인증/결제 시스템, 상태 차단, 이메일 인증, EC2 배포 및 리버스 프록시 구성
 
-### 🧰 사용기술
+###  사용기술
 
 | 영역     | 기술 |
 |----------|------|
@@ -163,7 +163,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 | DB       | MySQL 8.x (Soft Delete, deleted_users 테이블) |
 | 보안기반 | 이메일 인증, 상태 기반 로그인 차단, 관리자 권한 분기(role 기반) |
 
-### 📌 주요 기능
+###  주요 기능
 
 - 세션 기반 인증 (`passport-local`), bcrypt 해싱
 - 탈퇴/정지/휴면 계정 차단
@@ -171,7 +171,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 - 카카오페이 결제 시스템 구현 및 멤버십 등급 반영
 - 관리자 role 기반 접근 제한 미들웨어 설계
 
-### 🔧 트러블슈팅
+###  트러블슈팅
 
 - Soft delete 계정 정리 누락 → node-cron 기반 자동 제거 구현
 - FK 제약으로 인한 삭제 실패 → 트랜잭션 + CASCADE 처리
@@ -189,7 +189,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 **담당:** 인증/보안/로그 시스템, 관리자 기능, 크롤링, 외부 API 연동, 트러블슈팅 및 보안 문서화
 
-### 🧰 사용기술
+###  사용기술
 
 | 영역     | 기술 |
 |----------|------|
@@ -201,7 +201,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 | 외부 API | CoolSMS, Google SMTP, Kakao 주소 API, 기상청 초단기 API |
 | 기타     | Jsoup 기반 HTML 크롤링 |
 
-### 📌 주요 기능
+###  주요 기능
 
 - 소셜 로그인(OAuth2), 이메일·전화 인증 통합
 - 관리자 권한 분리 및 접근 제어 (@PreAuthorize)
@@ -221,7 +221,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 ---
 
-## 💼 경력 및 활동 요약
+##  경력 및 활동 요약
 
 - HALO_SHOP, HALO, SSGFC 등 **3개 팀 프로젝트에서 회원/보안/인증 전담**  
 - 모든 프로젝트 **AWS EC2 + Nginx + S3 + PM2 운영 및 배포 완료**  
@@ -243,7 +243,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 ---
 
-## ⭐ 평가 가능한 장점 (Strengths)
+##  평가 가능한 장점 (Strengths)
 
 - **상황 해결 중심**: 설계 레벨에서 문제 원인을 추적하고 구조로 대응  
 - **보안 감수성**: 인증·공격 시나리오·테스트·침투 대응 경험  
@@ -252,7 +252,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 ---
 
-## 💡 Career Goals
+##  Career Goals
 
 - 설계에 기반한 기술 도입 및 구조적 확장 가능성 추구  
 - Linux, SQL, AWS 기반으로 실용 중심 백엔드 성장  
