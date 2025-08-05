@@ -30,6 +30,8 @@
 ## 🛠 기술 역량 (Tech Stack)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact&hide=html)](https://github.com/anuraghazra/github-readme-stats)<br>
+<!-- 예시 -->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&repo=halo_me&layout=compact)
 
 **Backend**  
 - Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, python  
