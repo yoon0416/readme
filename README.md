@@ -1,313 +1,175 @@
 # 👋 About Me
 
-안녕하세요, 흐름을 먼저 설계하고 끝까지 책임지는 백엔드 개발자 **안윤기**입니다. <br>
-저는 시스템의 신뢰는 '정확한 로직과 단단한 구조'에서 시작된다고 믿습니다.
+> 흐름을 먼저 설계하고 끝까지 책임지는 백엔드 개발자 **안윤기**입니다.
 
-- 🌱 CS 기반 구조 이해 및 실무 설계 경험
-- 🛡️ JWT + 세션 혼합 하이브리드 인증 구조 구현
-- ☁️ AWS EC2 + S3 + Nginx + Shell Script 배포 및 인프라 구축
-- 🔐 보안 감수성 기반 미들웨어 및 공격 대응 로직 설계
-- 🧠 구조부터 로그 추적까지, 장애 시 전방위 분석 습관
+시스템의 신뢰는 **정확한 로직과 단단한 구조**에서 출발한다고 믿습니다.  
+**설계 → 구현 → 배포 → 장애 대응**까지, 책임지는 개발을 지향합니다.
 
+---
 
+## 🧠 핵심 역량 요약
 
-## 📬 CONTACT & LINKS
+- ✅ CS 기반 구조 이해 및 실무 적용 능력  
+- 🔐 **4중 인증 기반 하이브리드 인증 구조** 설계  
+- ☁️ AWS EC2 + S3 + Nginx + PM2 등 인프라 전담  
+- 🛡️ 보안 미들웨어 + 자동 차단 로직 직접 구현  
+- 🧾 로그 기반 트러블슈팅 & 보안 설계 문서화 습관  
 
-| 구분 | 내용 |
+---
+
+## 🛠 Tech Stack
+
+| 분류 | 기술 |
 |------|------|
-| Email | zgha16@gmail.com |
-| GitHub | https://github.com/yoon0416 |
-
-
-## 🏆 Awards
-🥇 **육군군수사령부 디지털 대전환 아이디어 공모전** (2023.07)
-- → 전·평시 탄약 적송 자동화 시스템 설계로 사령부 최우수상 수상
-- → 개념설계 및 구조화, 전군 확장 가능성 입증
-
-
-
-## 🛠 기술 역량 (Tech Stack)
-
-[![기술스택](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact&hide=html)](https://github.com/anuraghazra/github-readme-stats)
-
-| 영역             | 기술 및 도구                                                                                                 |
-|------------------|--------------------------------------------------------------------------------------------------------------|
-| **Backend**       | Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, Python <br> Session + JWT 혼합 인증 구조, Argon2, bcrypt <br> REST API, @PreAuthorize, OAuth2 |
-| **Frontend**      | React, Next.js, Redux, Axios <br> JWT 저장/삭제 도메인 관리, 상태관리 설계                                  |
-| **Infra & 보안**   | AWS EC2, S3, Nginx, PM2, Linux(Ubuntu), crontab, Shell Script <br> ffuf, Hydra, TruffleHog, curl 등 보안 테스트 도구  |
-| **Database**      | MySQL, MyBatis, Sequelize <br> Soft Delete, backup table, 스케줄링 기반 자동화                                |
-| **CI/CD**         | Shell Script + crontab 기반 자동 배포 스크립트 구현 (117s → 26s 단축)                                        |
-
-
-
-
-## GitHub 활동 요약
-[![yoon's GitHub stats](https://github-readme-stats.vercel.app/api?username=yoon0416)](https://github.com/anuraghazra/github-readme-stats)
-
-
-- 2025년 기준 약 1,300회 이상 커밋하며 꾸준한 Git 기반 개발 활동 경험
-- 90건 이상의 Pull Request를 통해 협업 중심 개발 환경에 익숙함
-- 외부 레포지토리 2곳 이상 기여 경험 보유
-  - [쇼핑몰 프로젝트](https://github.com/joyulbi/HALO_SHOP)
-  - [SNS 프로젝트](https://github.com/IN-P/HALO)
-
-
+| **Backend** | Java, Spring Boot, Node.js, Express, MyBatis, JPA, REST API, OAuth2 |
+| **Frontend** | React, Next.js, Redux, Styled-components |
+| **Infra** | AWS EC2, S3, Nginx, PM2, Shell Script, crontab |
+| **Security** | JWT, Session, Argon2, Bcrypt, ffuf, Hydra, curl 등 |
+| **Database** | MySQL, Sequelize (Soft Delete, Backup Table) |
+| **CI/CD** | Shell Script 기반 자동 배포 (구동 시간 117s → 26s 단축) |
 
 ---
 
-## 📌 Projects
+## 🏆 수상 이력
 
-# 🔹 HALO_SHOP – 굿즈 쇼핑몰 & 팬 커뮤니티 
-> - 기간 : (2025.06 ~ 07)
-> - 🛠 담당: 회원/보안/인증 시스템 전담, EC2 인프라 구성 및 자동 배포 / 트러블슈팅 및 팀 프로젝트 README.md 문서화
-
-## 사용기술
-
-| 영역       | 기술 스택                                                                      |
-| -------- | -------------------------------------------------------------------------- |
-| Frontend | React, Next.js, Redux, Styled-components, SockJS, StompJS, Recharts, Axios |
-| Backend  | Spring Boot, Java 11, MyBatis, JPA, Spring Security, OAuth2, WebSocket     |
-| Infra    | AWS EC2, S3, Nginx, PM2, crontab, Shell Script                             |
-| DB       | MySQL 8.x (Soft Delete, backup table, node-cron 기반 스케줄링)                   |
-| 보안도구     | Hydra, ffuf, TruffleHog, curl, Nikto 등 실전 테스트                              |
-
-
-## 주요 기능
-- **4중 인증 흐름 설계 및 구현**
-  - 유저: JWT + bcrypt / 관리자: 세션 + Argon2
-  - 로그인 API 하나로 통합 처리 (is_admin + role 기반 인증 분기)
-  - 로그인 실패, 탈퇴/휴면/정지 상태일 경우 차단 및 자동 로그아웃
-- **관리자 권한 분리 및 실시간 세션 제어**
-  - is_admin + role 값으로 관리자 권한 분기 (마스터/보안/유저 관리자 등)
-  - 로그인 시 세션 ID 저장 → 마스터 관리자가 특정 세션 강제 종료 가능
-- **보안 미들웨어 구현**
-  - 로그인 실패 감지
-  - 빠른 요청 탐지
-  - XSS / SQL Injection 감지 및 차단 로그 저장
-- **Shell Script + crontab 기반 자동 배포 구성**
-  - start_all.sh 작성 (백엔드 JAR 종료/재시작 + 프론트 build/start 자동화)
-  - EC2 재부팅 시 crontab @reboot 등록으로 서비스 자동 실행
-  - 기존 117초 → 26초로 전체 서비스 구동 시간 단축
-- **공격 도구 기반 실전 보안 테스트 수행**
-  - Hydra로 세션 로그인 대상 무작위 대입 공격 시도 → json 형식이라 히드라 적용 안됨
-  - ffuf로 JWT 기반 유저 로그인 공격 시도 → 많은 요청 리미트 로직 x, 무작위 대입공격 성공 및 dos급 공격 성공 → 미들웨어에 빠른요청 탐지 적용
-  - curl 기반 반복 요청으로 Rate Limit 미적용 상태 확인 후 제한 미들웨어 적용
-  - TruffleHog를 통해 Git 민감정보 유출 여부 사전 점검
-
-
-## 주요 트러블슈팅 사례
-
-- 트러블슈팅1:
-  - 문제: ffuf, Hydra 등 공격 도구 사용 시 요청 폭주로 서버 메모리 과부하 발생 
-  - 원인: 로그인 시 Argon2의 고비용 연산 + 빠른 요청으로 인해 CPU 100% 도달
-  - 해결: 요청 속도 제한(rate limiter), 빠른 요청 감지 미들웨어, 리퀘스트 딜레이 삽입, 공격 로그 저장 및 IP 차단 구조 미들웨어 적용
-
-- 트러블슈팅 2: 
-  - 문제: EC2 서버에서 java -jar 실행 시 시간대 문제로 로직 오작동 발생 (예: 이틀 전 날짜로 저장) 
-  - 원인: 기본 시스템 시간대가 UTC로 설정되어 있었고, Spring은 이 시간 기준으로 처리 
-  - 해결: -Duser.timezone=Asia/Seoul 옵션을 java 실행 시 명시하여 정상 작동
-
-- 트러블슈팅 3: 
-  - 문제 : EC2 인스턴스 재부팅 시, 백엔드(Spring Boot)와 프론트(Next.js) 기동까지 총 117초(1분 51초) 소요됨 
-  - 원인 : 백/프론트가 하나의 스크립트에서 순차 실행되고, 프론트는 매번 npm install, npm run build를 불필요하게 반복 수행함 
-  - 해결 : start_all.sh에서 백/프론트 병렬 실행(& + wait),. node_modules, .next 존재 여부 확인 후 불필요한 작업 생략, crontab @reboot 등록으로 자동 실행 → 최종 서비스 도달 시간 26초, 기존 대비 77% 속도 단축
-   
-## 협업 및 소감
-
-| 협업 및 소감 | 내용|
-| -------- | -------------------------------------------------------------------------- |
-| **협업 경험** |회원 인증, 관리자 보안, 결제 기능 등 주요 기능을 팀원들과 역할 분담하여 개발하였고, 요구사항 정리와 ERD 설계, API 명세서 작성 등 문서화를 주도하여 프로젝트 구조를 명확히 정리했습니다. 또한 실시간 이슈 대응을 위해 커뮤니케이션 채널을 활성화하고, <br> 회의록 기반 협업 툴 정리를 통해 일정 조율과 코드 병합을 원활히 수행했습니다.|
-| **피드백 수용**|초기 응답 구조 지적 후, 팀원과 협의해 role, isAdmin 등 핵심 필드를 포함한 통일된 응답 포맷으로 개선했습니다. |
-| **향후 다짐**|안정성과 보안성, 유지보수성을 고려한 아키텍처를 설계할 수 있는 백엔드 개발자로 성장하고자 하며, 앞으로도 팀원과의 소통을 바탕으로 문제를 함께 해결하고, 신뢰를 기반으로 시스템을 완성해나가는 개발자가 되겠습니다. |
-
-
-## 🔗 관련 링크
-- [GitHub](https://github.com/joyulbi/HALO_SHOP)
-- [AWS 배포](http://43.202.189.108/)
-- [YouTube 시연 영상](https://www.youtube.com/watch?v=Xm-JVtveUPE)
-
+- 🥇 **육군군수사령부 디지털 대전환 아이디어 공모전 최우수상**
+  - 전·평시 탄약 적송 자동화 시스템 설계
+  - 개념 구조화 + 전군 확장 가능성 입증
 
 ---
 
-# 🔹 HALO – 팬 커뮤니티 기반 SNS 
-> - 기간 : (2025.05 ~ 06)
-> - 🛠 담당: 회원/인증/결제 시스템 전담 (세션 기반 인증 + 이메일 인증 + 회원 상태 차단),  
-> - EC2 배포 및 Nginx 리버스 프록시 구성, 트러블슈팅 및 로그인 흐름 개선
-
-## 사용기술
-| 영역       | 기술 스택                                                                 |
-| ---------- | -------------------------------------------------------------------------- |
-| Frontend   | React, Redux, Axios                                                        |
-| Backend    | Node.js, Express, Passport, bcrypt, Nodemailer                             |
-| Infra      | AWS EC2, PM2, Nginx                              |
-| DB         | MySQL 8.x (Soft Delete, user_status 기반 상태관리, deleted_users 테이블 백업) |
-| 보안기반    | 이메일 인증, 회원 상태 기반 로그인 차단, 관리자 페이지 분기 구성 (role 기반)        |
-
-
-
-## 🔧 주요 역할 및 구조
-
-- 유저 전용 인증 및 계정 관리 로직 설계
-- 상태값 기반 로그인 차단 및 관리 기능 구현
-- 이메일 인증 기반 임시 비밀번호 발급 시스템 개발
-- 카카오페이 연동 결제 시스템 및 멤버십 등급 반영 기능
-- AWS EC2 배포 및 PM2/Nginx 리버스 프록시 구성
-
-
-
-## 🔐 인증 & 계정 시스템
+## 📬 연락처 & 링크
 
 | 항목 | 내용 |
 |------|------|
-| 인증 방식 | `passport-local` 기반 세션 인증 |
-| 해싱 알고리즘 | `bcrypt` |
-| 사용자 상태 제어 | `user_status_id` 필드로 로그인 차단 처리 |
-| 자동 로그인 차단 | 세션 존재 여부로 체크 |
-| 이메일 인증 기능 | 비밀번호 재발급 시 사용 (임시 PW 발송 후 변경 유도) |
-| 복구 기능 | 탈퇴 계정 복구, 휴면 복구 (이메일 기반) |
-
-
-
-## 💳 결제 시스템
-
-- 카카오페이 결제 연동 API 직접 구현
-- 결제 성공 시 `user_payment` 테이블에 기록
-- 상태값 `status` 기반으로 결제 성공/실패 관리
-- 결제 내역 기반 `membership_id` 변경 처리 (등급 상승)
-
-
-
-## 🧠 관리자 권한 분기
-
-| 필드 | 설명 |
-|------|------|
-| `role` | 숫자 기반 관리자 권한 구분 (1~10) |
-| 접근 제한 | `roleMiddleware`에서 특정 관리자 role만 통과 허용 |
-| 분기 예시 | 유저관리자(5), 보안관리자(6), 마스터(1) 등 |
-
-
-
-## 🛡 보안 및 상태 체크 미들웨어
-
-- 비정상 상태 유저 차단 로직 구현  
-  (`user_status_id`: 2=탈퇴, 3=정지, 4=휴면 → 로그인 거부)
-- 자동 탐지 차단은 미구현, 다만 상태 체크 로직은 미들웨어화하여 인증 흐름 제어
-- 관리자 전용 경로는 `roleMiddleware`로 보호
-
-
-
-## 📂 기술 요약
-
-| 구분 | 내용 |
-|------|------|
-| 인증 | 세션 기반 로그인 (passport) |
-| 해싱 | bcrypt |
-| 이메일 인증 | 임시 비밀번호 발급 |
-| 로그인 차단 | 상태값 기반 분기 (`user_status_id`) |
-| 결제 | 카카오페이 API 연동 |
-| 배포 | EC2 + PM2 + Nginx |
-| 관리자 구조 | `role` 기반 미들웨어 분리 |
-| 보안 로직 | 차단 아님, 상태 체크 위주 |
-| 사용한 DB | MySQL (Sequelize ORM) |
-
-
-
-## 주요 트러블 슈팅 사례 
-- 트러블슈팅 1: 
-  - 문제: 일정 시간이 지나면 soft delete 데이터가 계속 DB에 남아있어 정리 안 됨
-  - 원인: 삭제 예약된 계정에 대한 자동 제거 로직이 없었음
-  - 해결: Node.js에서 node-cron + MySQL deleted_at 타임스탬프 조건 기반으로 자동 삭제 스케줄러 구현 
- 
-- 트러블슈팅 2: 
-  - 문제: 유저 하드딜리트 시 FK 연관된 테이블이 남아서 삭제 실패 
-  - 원인: Sequelize에서 CASCADE 옵션이 누락 및 연관 테이블 처리 순서가 잘못됨 
-  - 해결: FK 관계 명확히 설정 + 삭제 순서를 transaction으로 묶어 안전하게 처리
-  
-
-## 🔗 관련 링크
-
-- [GitHub - HALO 프로젝트](https://github.com/IN-P/HALO)
-
+| 📧 Email | zgha16@gmail.com |
+| 🐙 GitHub | [github.com/yoon0416](https://github.com/yoon0416) |
+| 📽️ YouTube | [시연 영상](https://www.youtube.com/watch?v=Xm-JVtveUPE) |
+| 🌐 배포 링크 | [HALO_SHOP 배포](http://43.202.189.108/) |
 
 ---
 
-# 🔹 SSGFC – SSG 랜더스 팬 커뮤니티
-> - 기간 :  (2025.04 ~ 2025.05)
-> - 🛠 담당: 회원/인증/보안 시스템 설계 및 구현, 로그 시스템, 관리자 기능, 트러블슈팅 및 보안 문서화
-
-## 사용기술
-| 영역       | 기술 및 도구                                                                 |
-| ---------- | ------------------------------------------------------------------------ |
-| Frontend   | Thymeleaf, Bootstrap, JavaScript                                         |
-| Backend    | Java 11, Spring Boot 2.7.14, Spring Security, JPA, Maven                 |
-| DB         | MySQL 8.0                                                                |
-| Infra      | 로컬 Tomcat → AWS EC2 이전 준비 중                                       |
-| 인증/보안  | Spring Security 커스텀 인증, OAuth2(Kakao/Naver/Google), 이메일/전화 인증 |
-| 외부 API   | CoolSMS, Google SMTP, Kakao 우편번호 API, 기상청 초단기 API             |
-| 크롤링     | Jsoup 기반 HTML 크롤링                                                   |
-| 문서화     | GitHub 문서화: [보안설계](https://github.com/yoon0416/ssgpack/blob/main/시큐리티.md), [트러블슈팅](https://github.com/yoon0416/ssgpack/blob/main/트러블슈팅.md) |
+## 🔹 대표 프로젝트 요약
 
 ---
 
-## 🔐 인증 및 보안 설계
-- Spring Security 기반 커스텀 로그인 및 세션 인증 구조 구현
-- OAuth2 소셜 로그인 (카카오/네이버/구글) 연동
-- 이메일 인증 (Google SMTP), 전화번호 인증 (CoolSMS API)
-- 사용자 상태별 접근제한 (정지/탈퇴/휴면)
-- 관리자와 일반 유저 역할 분리 (`@PreAuthorize` 기반 접근 제어)
-- 게시글/댓글 본인 인증 기능 및 비로그인 사용자 제한
-- 로그 자동 기록 및 삭제 스케줄러 구성 (30일 보존)
+### 🛒 HALO_SHOP – 굿즈 쇼핑몰 & 팬 커뮤니티  
+> `2025.06 ~ 07` ｜ Spring Boot + React + AWS 배포 + 보안 설계  
+> **담당:** 회원 인증 · 관리자 기능 · 보안 로직 · EC2 인프라 · 자동배포 · 로그 설계
 
+<details>
+<summary>📌 기능 요약 (펼쳐보기)</summary>
 
-## 🛠 주요 담당 기능
-| 분류     | 설명 |
-|--------|------|
-| 회원/인증 | 커스텀 로그인 + 소셜 로그인 + 이메일/전화 인증 통합 구조 |
-| 관리자 기능 | 역할 분리: 유저/게시판/신고/일정/선수 관리 기능 구현 |
-| 보안 설계 | Spring Security 기반 사용자 상태 제어 + 접근 통제 설계 |
-| 로그 시스템 | 기능별 로그 수집 + 자동 삭제 스케줄링 (정책 기반) |
-| 외부 API 연동 | 기상청 API, Kakao 주소, CoolSMS, SMTP 인증 포함 |
-| 트러블슈팅 | 인증 오류/로그 수집 누락 등 실시간 문제 대응 및 해결 문서화 |
+- **4중 인증 흐름**: JWT + bcrypt (유저) / Session + Argon2 (관리자)
+- is_admin + role 기반 통합 로그인 API
+- 보안 미들웨어: 로그인 실패, 빠른 요청, XSS, SQL Injection 탐지 및 차단
+- Shell Script + crontab 자동 배포 구성 (117s → 26s)
+- ffuf/Hydra/curl 등 도구 기반 실전 보안 테스트 수행 및 대응
 
+</details>
 
-## 📄 참고 문서
-- 🔗 [보안 설계 문서](https://github.com/yoon0416/ssgpack/blob/main/시큐리티.md)
-- 🔗 [트러블슈팅 문서](https://github.com/yoon0416/ssgpack/blob/main/트러블슈팅.md)
-- 🔗 [문서 정리 저장소](https://github.com/yoon0416/document)
-- 🔗 [AWS 설정](https://github.com/yoon0416/ssgpack/blob/main/aws.md)
-- 📽️ [기능 구현 영상 (회원/보안 파트)](https://youtu.be/pWBEOX9JKqc)
+<details>
+<summary>🔧 주요 트러블슈팅 사례</summary>
 
+- **문제:** 공격 도구 요청 폭주로 서버 메모리 과부하  
+  **해결:** 요청 속도 제한 + 딜레이 삽입 + IP 차단 구조 미들웨어 적용
 
+- **문제:** EC2 시간대 설정 오류로 로직 오작동  
+  **해결:** `-Duser.timezone=Asia/Seoul` 옵션 적용
 
----
-## 💼 경력 및 활동
-- 보안 중심 백엔드 개발자로 다수 팀 프로젝트에 참여
-  - SSGFC(야구 커뮤니티), HALO(팬 SNS), HALO_SHOP(굿즈 쇼핑몰) 프로젝트에서 <br>
-    → 회원/보안/인증/결제 시스템 전체 설계 및 구현 담당
-    
-- 3개 팀 프로젝트 모두 실제 배포까지 완료, AWS EC2 + Nginx + S3 + PM2 등 직접 운영
+- **문제:** 서버 재시작 시 서비스 도달까지 117초 소요  
+  **해결:** start_all.sh 병렬 실행 최적화 → 26초 단축 (77% 개선)
 
-- JWT + 세션 하이브리드 인증, Argon2 관리자 해싱, 로그인 차단 로직, 계정 상태 제어, 이메일 인증 기반 복구 및 비밀번호 초기화, 관리자 강제 로그아웃, 로그 블록체인 설계 등 구현
+</details>
 
-- 모든 프로젝트에 대해 트러블슈팅 문서화 + 리드미 작성 + 배포 가이드 문서화 경험
+<details>
+<summary>🤝 협업 및 리더십</summary>
 
-- 보안 논문 JANUS 직접 설계 → 구조 기반 판단 아키텍처, Fake DB, 디지털 트윈, KARMA 설계자 감시 시스템 설계
+- API 명세서, ERD, 배포 가이드 등 문서화 주도  
+- 응답 포맷 개선 피드백 수용 → isAdmin/role 포함 통일된 구조로 정비  
+- 실시간 이슈 대응 및 커뮤니케이션 주도
 
-- 리눅스 쉘 스크립트 기반 배포 자동화, crontab 스케줄러 연동 경험 보유
+</details>
 
 ---
-## ⭐ 평가 가능한 장점 (Strengths)
 
-- **상황 해소 중심**: 문제 발생 시 설계 단계에서 원인을 파악하고 구조부터 수정  
-- **보안 감수성**: 시뮬레이션, 테스트, 인증 로직 설계 능력  
-- **문서화 역량**: README, 배포 가이드, 트러블슈팅 정리 습관  
-- **업무 구조 이해**: 회사 구조 이해 후 기술 습득 → 팀 생산성 기반으로 확장 가능  
+### 📱 HALO – 팬 SNS 기반 커뮤니티  
+> `2025.05 ~ 06` ｜ Node.js + MySQL + 카카오페이 결제 + 세션 인증  
+> **담당:** 회원/인증/결제 시스템, 로그인 상태 차단, 이메일 인증 흐름 설계
+
+<details>
+<summary>📌 핵심 구조</summary>
+
+- 세션 기반 인증 (`passport-local`), bcrypt 해싱  
+- user_status 기반 로그인 차단 (탈퇴/휴면/정지)  
+- 카카오페이 연동 → 결제 기록 + 멤버십 등급 반영  
+- 이메일 인증 → 임시 비밀번호 발급 및 복구  
+- 관리자 접근 roleMiddleware 설계 및 분기
+
+</details>
+
+<details>
+<summary>🔧 트러블슈팅 예시</summary>
+
+- **문제:** soft delete 데이터 정리 안 됨  
+  **해결:** node-cron + deleted_at 기반 자동 삭제 스케줄러 구현
+
+- **문제:** FK 연관 테이블 삭제 실패  
+  **해결:** CASCADE 누락 + 삭제 순서 오류 → transaction 처리로 해결
+
+</details>
+
+---
+
+### 🧢 SSGFC – 야구 팬 커뮤니티  
+> `2025.04 ~ 05` ｜ Spring Boot + Spring Security + OAuth2  
+> **담당:** 인증/보안/로그 시스템 설계 + 관리자 기능 + 외부 API 연동
+
+<details>
+<summary>📌 주요 기능</summary>
+
+- Spring Security 커스텀 로그인, 세션 기반 인증 구조  
+- OAuth2 소셜 로그인 + 이메일/전화 인증 통합  
+- @PreAuthorize 기반 관리자 권한 분리  
+- 로그 자동 기록 + 30일 삭제 스케줄러 구성  
+- Kakao 주소 API, 기상청 API, CoolSMS 등 외부 연동 구현
+
+</details>
+
+---
+
+## 📄 문서 및 자료
+
+- 🔐 [보안 설계 문서](https://github.com/yoon0416/ssgpack/blob/main/시큐리티.md)  
+- 🛠 [트러블슈팅 문서](https://github.com/yoon0416/ssgpack/blob/main/트러블슈팅.md)  
+- 📚 [문서 저장소](https://github.com/yoon0416/document)  
+- ☁️ [AWS 설정 가이드](https://github.com/yoon0416/ssgpack/blob/main/aws.md)  
+
+---
+
+## 💼 활동 이력
+
+- SSGFC / HALO / HALO_SHOP 등 3개 실전 프로젝트에서 **회원/보안/인증 전담**
+- **모든 프로젝트 AWS 배포 완료** 및 EC2/S3/Nginx 운영
+- 로그인 차단/복구/하이브리드 인증 등 **보안 로직 직접 구현**
+- JANUS 보안 논문 설계: Fake DB, 설계자 감시 시스템 등 구조화
+- 리눅스 Shell Script 기반 배포 자동화 경험 풍부
+
+---
+
+## ⭐ 강점 요약
+
+- **상황 해결 중심 개발**: 문제의 원인을 구조에서 찾고 해결  
+- **보안 감수성**: 침투 시나리오, 로직 테스트, 대응 구조 설계  
+- **문서화 습관**: README, 트러블슈팅, 배포가이드 작성  
+- **업무 구조 기반 사고**: 시스템 전체의 흐름을 고려한 설계 가능
 
 ---
 
 ## 💡 Career Goals
 
-- 구조적 이해가 가능한 설계 위에 기술 도입  
-- 변경이 적은 **Linux, SQL, AWS**를 실용 중심으로 지속 활용  
-- 차기 프로젝트에 **보안 감지, 로그 테스트 단계 확장** 계획  
-- 다양한 인증/보안 도구를 실전에 맞춰 커스터마이징할 역량 확보 예정  
+- 구조를 이해하고 통제할 수 있는 백엔드 보안 아키텍처 설계자  
+- Linux / SQL / AWS 기반 실용적이고 안정적인 기술 중심 성장  
+- 로그 테스트 및 인증 흐름 고도화, 자동 공격 탐지 시스템 설계  
+- 실전 보안 구조를 커스터마이징할 수 있는 역량 강화
+
