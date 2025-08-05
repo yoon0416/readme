@@ -101,10 +101,6 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 ##  Projects
 
-
----
-
-
 <summary>🔹 HALO_SHOP – 굿즈 쇼핑몰 & 팬 커뮤니티 (2025.06 ~ 07)</summary>
 
 **담당:** 회원/보안/인증 시스템 전담, EC2 인프라 구성, 자동 배포, 트러블슈팅 및 문서화  
