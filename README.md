@@ -29,7 +29,7 @@
 
 ## 🛠 기술 역량 (Tech Stack)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact)](https://github.com/anuraghazra/github-readme-stats) <br>
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact&hide=html)](https://github.com/anuraghazra/github-readme-stats)<br>
 
 **Backend**  
 - Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, python  
@@ -54,7 +54,7 @@
 ---
 ## GitHub 활동 요약
 [![yoon's GitHub stats](https://github-readme-stats.vercel.app/api?username=yoon0416)](https://github.com/anuraghazra/github-readme-stats)
-![yoon0416's GitHub Contribution Graph](https://github-readme-activity-graph.cyclic.app/graph?username=yoon0416&theme=github-compact)
+
 
 - 2025년 기준 약 1,300회 이상 커밋하며 꾸준한 Git 기반 개발 활동 경험
 - 90건 이상의 Pull Request를 통해 협업 중심 개발 환경에 익숙함
