@@ -1,14 +1,13 @@
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 # 👋 About Me
 
-CS 기반 구조를 확인하고, 전체 흐름이 정확히 돌아가도록 설계하는 백엔드 개발자 안윤기입니다.
+안녕하세요, 흐름을 먼저 설계하고 끝까지 책임지는 백엔드 개발자 안윤기입니다.
+저는 시스템의 신뢰는 '정확한 로직과 단단한 구조'에서 시작된다고 믿습니다.
 
-"전자화 = 사용자의 실행 + 흐름 + 외부 요소"처럼 가장 차단한 구조는 '실행과 자연시간비'를 가능하게 해야 한다고 믿습니다.
-
-- 스프링 로그인 기능과 부적절성 필터 설계
-- JWT + 세션 혼합 인증 구조 구현
-- AWS EC2 + S3 + Nginx + Shell Script 구성 가능
-- 사용자/관리자 담당 포트폴리오 프로젝트 3개 수행
+- 🌱 CS 기반 구조 이해 및 실무 설계 경험
+- 🛡️ JWT + 세션 혼합 하이브리드 인증 구조 구현
+- ☁️ AWS EC2 + S3 + Nginx + Shell Script 배포 및 인프라 구축
+- 🔐 보안 감수성 기반 미들웨어 및 공격 대응 로직 설계
+- 🧠 구조부터 로그 추적까지, 장애 시 전방위 분석 습관
 
 ---
 
@@ -24,7 +23,7 @@ CS 기반 구조를 확인하고, 전체 흐름이 정확히 돌아가도록 설
 ## 🛠 기술 역량 (Tech Stack)
 
 **Backend**  
-- Java, Spring Boot, Spring Security, MyBatis, JPA  
+- Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, python  
 - Session + JWT 혼합 인증 구조, Argon2, bcrypt  
 - Rest API, @PreAuthorize, OAuth2  
 
@@ -44,18 +43,15 @@ CS 기반 구조를 확인하고, 전체 흐름이 정확히 돌아가도록 설
 - Shell Script + crontab 기반 자동 배포 스크립트 (117s → 26s)
 
 ---
+## 📊 GitHub Stats
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
 
-## 🎓 Education
-
-- 부천대 IT융합비즈니스학과 (경영 + IT 기술 학습)
-- 인천정보과학고 전산과 졸업
-- 더조은 컴퓨터아카데미: AI 풀스택 과정 (Java, Python, Flutter)
 
 ---
 
 ## 📑 포트폴리오 기술보고서
 
-(중략... 추가 요청 시 3개 프로젝트 내용 포함 가능)
+
 
 ---
 
