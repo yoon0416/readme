@@ -99,11 +99,11 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 ---
 
 ## 📌 Projects
-> 확인하고 싶은 프로젝트를 클릭해주세요!
+
 
 ---
 
-<details>
+
 <summary>🔹 HALO_SHOP – 굿즈 쇼핑몰 & 팬 커뮤니티 (2025.06 ~ 07)</summary>
 
 **담당:** 회원/보안/인증 시스템 전담, EC2 인프라 구성, 자동 배포, 트러블슈팅 및 문서화  
@@ -144,11 +144,11 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 - [배포](http://43.202.189.108/)  
 - [시연 영상](https://www.youtube.com/watch?v=Xm-JVtveUPE)
 
-</details>
+
 
 ---
 
-<details>
+
 <summary>🔹 HALO – 팬 SNS 기반 커뮤니티 (2025.05 ~ 06)</summary>
 
 **담당:** 회원/인증/결제 시스템, 상태 차단, 이메일 인증, EC2 배포 및 리버스 프록시 구성
@@ -180,11 +180,11 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 - [GitHub](https://github.com/IN-P/HALO)
 
-</details>
+
 
 ---
 
-<details>
+
 <summary>🔹 SSGFC – SSG 랜더스 팬 커뮤니티 (2025.04 ~ 05)</summary>
 
 **담당:** 인증/보안/로그 시스템, 관리자 기능, 크롤링, 외부 API 연동, 트러블슈팅 및 보안 문서화
@@ -217,7 +217,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 - [AWS 설정](https://github.com/yoon0416/ssgpack/blob/main/aws.md)
 - [시연 영상](https://youtu.be/pWBEOX9JKqc)
 
-</details>
+
 
 ---
 
