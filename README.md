@@ -63,9 +63,92 @@
   - [SNS 프로젝트](https://github.com/IN-P/HALO)
 
 
+
 ---
 
-## 📑 포트폴리오 기술보고서
+## 📌 Projects
+
+### 🔹 HALO_SHOP – 굿즈 쇼핑몰 & 팬 커뮤니티 (2025.06 ~ 07)
+> 🛠 담당: 회원/보안/인증 시스템 전담, EC2 인프라 구성 및 자동 배포 / 트러블슈팅 및 팀 프로젝트 README.md 문서화
+
+## 사용기술
+| 영역       | 기술 스택                                                                      |
+| -------- | -------------------------------------------------------------------------- |
+| Frontend | React, Next.js, Redux, Styled-components, SockJS, StompJS, Recharts, Axios |
+| Backend  | Spring Boot, Java 11, MyBatis, JPA, Spring Security, OAuth2, WebSocket     |
+| Infra    | AWS EC2, S3, Nginx, PM2, crontab, Shell Script                             |
+| DB       | MySQL 8.x (Soft Delete, backup table, node-cron 기반 스케줄링)                   |
+| 보안도구     | Hydra, ffuf, TruffleHog, curl, Nikto 등 실전 테스트                              |
+
+
+## 주요 기능
+- 4중 인증 흐름 설계 및 구현
+  - 유저: JWT + bcrypt / 관리자: 세션 + Argon2
+  - 로그인 API 하나로 통합 처리 (is_admin + role 기반 인증 분기)
+  - 로그인 실패, 탈퇴/휴면/정지 상태일 경우 차단 및 자동 로그아웃
+- 관리자 권한 분리 및 실시간 세션 제어
+  - is_admin + role 값으로 관리자 권한 분기 (마스터/보안/유저 관리자 등)
+  - 로그인 시 세션 ID 저장 → 마스터 관리자가 특정 세션 강제 종료 가능
+- 보안 미들웨어 구현
+  - 로그인 실패 감지
+  - 빠른 요청 탐지
+  - XSS / SQL Injection 감지 및 차단 로그 저장
+- Shell Script + crontab 기반 자동 배포 구성
+  - start_all.sh 작성 (백엔드 JAR 종료/재시작 + 프론트 build/start 자동화)
+  - EC2 재부팅 시 crontab @reboot 등록으로 서비스 자동 실행
+  - 기존 117초 → 26초로 전체 서비스 구동 시간 단축
+- 공격 도구 기반 실전 보안 테스트 수행
+  - Hydra로 세션 로그인 대상 무작위 대입 공격 시도 → json 형식이라 히드라 적용 안됨
+  - ffuf로 JWT 기반 유저 로그인 공격 시도 → 많은 요청 리미트 로직 x, 무작위 대입공격 성공 및 dos급 공격 성공 → 미들웨어에 빠른요청 탐지 적용
+  - curl 기반 반복 요청으로 Rate Limit 미적용 상태 확인 후 제한 미들웨어 적용
+
+TruffleHog를 통해 Git 민감정보 유출 여부 사전 점검
+
+🧩 주요 트러블슈팅 사례
+- 관리자 로그인 실패
+→ 로그인 응답에서 isAdmin, role, session 여부 누락 → JSON 응답 구조 재정의
+- WebSocket이 Next.js dev 모드에서 작동 안 됨
+→ npm run dev 환경에서는 정상 작동 불가 → build 후 실행으로 해결
+- 시간대 오류로 EC2 배포 시 날짜 -2일 오류 발생
+→ -Duser.timezone=Asia/Seoul 파라미터 명시
+- pm2 없이 Node+Java 병렬 자동 배포 구현
+→ start_all.sh에 병렬 처리 및 skip 조건 추가, crontab 등록 완료
+- ffuf/Hydra 공격 시 CPU 100% 이상 도달
+→ 요청 간 delay 삽입, 빠른 요청 차단 미들웨어 설계, 공격자 IP 로그 저장
+- 이미지 경로 대소문자 오류 (Linux 배포 환경)
+→ .PNG, .Png 등 혼용 → 모든 경로 및 파일명 .png로 통일 처리
+
+## 🔗 관련 링크
+- [GitHub](https://github.com/joyulbi/HALO_SHOP)
+- [AWS 배포](http://43.202.189.108/)
+- [YouTube 시연 영상](https://www.youtube.com/watch?v=Xm-JVtveUPE)
+
+---
+
+### 🔹 HALO – 팬 커뮤니티 SNS (2025.05 ~ 06)
+> 🛠 담당: 회원/보안/인증/결제 파트 전담  
+> ⚙️ Node.js + Sequelize + React 
+
+- JWT 로그인 + 세션 기반 관리자 인증 구조 분리 설계
+- 회원가입, 로그인, 정지/휴면/탈퇴 상태 제어 및 접근 차단
+- 탈퇴 복구 및 비밀번호 재발급 기능 (이메일 인증 기반) 직접 구현
+- 카카오페이 결제 기능 및 멤버십 등급 상태 관리 기능 직접 구현
+- 공격 탐지용 로그 수집 로직 설계 및 Postman 테스트 자동화
+- 관리자 권한(role) 기반 미들웨어 구현 (마스터/보안/유저 관리자)
+- 👉 [GitHub](https://github.com/IN-P/HALO)
+
+---
+
+### 🔹 SSGFC – 야구 커뮤니티 (2025.04 ~ 05)
+> 🛠 담당: 회원/보안/관리자 기능 담당  
+> ⚙️ Spring Boot + JPA + MySQL
+
+- 회원가입, 로그인, 마이페이지, Soft Delete 기반 탈퇴 처리 구현
+- 관리자 권한 분리 설계 및 유저 제어 기능 구현 (상태값 기반 제어)
+- JWT 기반 인증 및 logs 테이블 구축, 비정상 요청 차단 로직 추가
+- 👉 [GitHub](https://github.com/yoon0416/SSGFC)
+
+
 
 
 
