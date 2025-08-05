@@ -1,4 +1,5 @@
 # 👋 About Me
+![visitors](https://visitor-badge.glitch.me/badge?page_id=yoon0416)
 
 안녕하세요, 흐름을 먼저 설계하고 끝까지 책임지는 백엔드 개발자 **안윤기**입니다.  
 저는 시스템의 신뢰는 '정확한 로직과 단단한 구조'에서 시작된다고 믿습니다.  
@@ -54,7 +55,7 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 ## 📈 GitHub 활동 요약
 
-[![yoon's GitHub stats](https://github-readme-stats.vercel.app/api?username=yoon0416)](https://github.com/anuraghazra/github-readme-stats)
+![yoon's GitHub activity graph](https://github-readme-activity-graph.vercel.app/graph?username=yoon0416&theme=react-dark&hide_border=true)
 
 - 1,300회 이상 커밋  
 - 90건 이상 Pull Request  
