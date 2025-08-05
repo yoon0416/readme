@@ -29,7 +29,8 @@
 
 ## 🛠 기술 역량 (Tech Stack)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact)](https://github.com/anuraghazra/github-readme-stats) <br>
+
 **Backend**  
 - Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, python  
 - Session + JWT 혼합 인증 구조, Argon2, bcrypt  
