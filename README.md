@@ -63,18 +63,6 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 
 ---
 
-## 📈 GitHub 활동 요약
-
-![Profile 3D Card](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=yoon0416&theme=vue)
-
-- 1,300회 이상 커밋  
-- 90건 이상 Pull Request  
-- 외부 기여 레포지토리:
-  - [HALO_SHOP](https://github.com/joyulbi/HALO_SHOP)
-  - [HALO](https://github.com/IN-P/HALO)
-
----
-
 ## 📌 Projects
 > 확인하고 싶은 프로젝트를 클릭해주세요!
 
@@ -205,6 +193,18 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
 - 관리자 강제 로그아웃, Argon2 해싱, 이메일 인증 기반 복구 등 **보안 로직 직접 구현**  
 - JANUS 보안 아키텍처 논문 설계 및 시뮬레이션 기반 보안 흐름 설계  
 - 리눅스 Shell Script 자동화, 로그 분석, crontab 기반 스케줄링 경험 보유
+
+---
+
+## 📈 GitHub 활동 요약
+
+![Profile 3D Card](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=yoon0416&theme=vue)
+
+- 1,300회 이상 커밋  
+- 90건 이상 Pull Request  
+- 외부 기여 레포지토리:
+  - [HALO_SHOP](https://github.com/joyulbi/HALO_SHOP)
+  - [HALO](https://github.com/IN-P/HALO)
 
 ---
 
