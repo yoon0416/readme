@@ -1,5 +1,8 @@
 # 👋 About Me
 
+![Commit](https://img.shields.io/badge/Daily_commit-YES-green?style=flat-square&logo=github)
+![Sleeping](https://img.shields.io/badge/Sleep-4h-blue?style=flat-square)
+![Learning](https://img.shields.io/badge/Currently_Learning-Security-orange?style=flat-square)
 
 안녕하세요, 흐름을 먼저 설계하고 끝까지 책임지는 백엔드 개발자 **안윤기**입니다.  
 저는 시스템의 신뢰는 '정확한 로직과 단단한 구조'에서 시작된다고 믿습니다.  
