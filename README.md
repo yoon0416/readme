@@ -231,16 +231,51 @@
 
 ---
 
-## 🔹 SSGFC – 야구 커뮤니티 (2025.04 ~ 05)
-> 🛠 담당: 회원/보안/관리자 기능 담당  
-> ⚙️ Spring Boot + JPA + MySQL
+# 🔹 SSGFC – SSG 랜더스 팬 커뮤니티
+> - 기간 :  (2025.04 ~ 2025.05)
+> - 🛠 담당: 회원/인증/보안 시스템 설계 및 구현, 로그 시스템, 관리자 기능, 트러블슈팅 및 보안 문서화
 
-- 회원가입, 로그인, 마이페이지, Soft Delete 기반 탈퇴 처리 구현
-- 관리자 권한 분리 설계 및 유저 제어 기능 구현 (상태값 기반 제어)
-- JWT 기반 인증 및 logs 테이블 구축, 비정상 요청 차단 로직 추가
-- 👉 [GitHub](https://github.com/yoon0416/SSGFC)
+## 사용기술
+| 영역       | 기술 및 도구                                                                 |
+| ---------- | ------------------------------------------------------------------------ |
+| Frontend   | Thymeleaf, Bootstrap, JavaScript                                         |
+| Backend    | Java 11, Spring Boot 2.7.14, Spring Security, JPA, Maven                 |
+| DB         | MySQL 8.0                                                                |
+| Infra      | 로컬 Tomcat → AWS EC2 이전 준비 중                                       |
+| 인증/보안  | Spring Security 커스텀 인증, OAuth2(Kakao/Naver/Google), 이메일/전화 인증 |
+| 외부 API   | CoolSMS, Google SMTP, Kakao 우편번호 API, 기상청 초단기 API             |
+| 크롤링     | Jsoup 기반 HTML 크롤링                                                   |
+| 문서화     | GitHub 문서화: [보안설계](https://github.com/yoon0416/ssgpack/blob/main/시큐리티.md), [트러블슈팅](https://github.com/yoon0416/ssgpack/blob/main/트러블슈팅.md) |
+
+---
+
+## 🔐 인증 및 보안 설계
+- Spring Security 기반 커스텀 로그인 및 세션 인증 구조 구현
+- OAuth2 소셜 로그인 (카카오/네이버/구글) 연동
+- 이메일 인증 (Google SMTP), 전화번호 인증 (CoolSMS API)
+- 사용자 상태별 접근제한 (정지/탈퇴/휴면)
+- 관리자와 일반 유저 역할 분리 (`@PreAuthorize` 기반 접근 제어)
+- 게시글/댓글 본인 인증 기능 및 비로그인 사용자 제한
+- 로그 자동 기록 및 삭제 스케줄러 구성 (30일 보존)
 
 
+## 🛠 주요 담당 기능
+| 분류     | 설명 |
+|--------|------|
+| 회원/인증 | 커스텀 로그인 + 소셜 로그인 + 이메일/전화 인증 통합 구조 |
+| 관리자 기능 | 역할 분리: 유저/게시판/신고/일정/선수 관리 기능 구현 |
+| 보안 설계 | Spring Security 기반 사용자 상태 제어 + 접근 통제 설계 |
+| 로그 시스템 | 기능별 로그 수집 + 자동 삭제 스케줄링 (정책 기반) |
+| 외부 API 연동 | 기상청 API, Kakao 주소, CoolSMS, SMTP 인증 포함 |
+| 트러블슈팅 | 인증 오류/로그 수집 누락 등 실시간 문제 대응 및 해결 문서화 |
+
+
+## 📄 참고 문서
+- 🔗 [보안 설계 문서](https://github.com/yoon0416/ssgpack/blob/main/시큐리티.md)
+- 🔗 [트러블슈팅 문서](https://github.com/yoon0416/ssgpack/blob/main/트러블슈팅.md)
+- 🔗 [문서 정리 저장소](https://github.com/yoon0416/document)
+- 🔗 [AWS 설정](https://github.com/yoon0416/ssgpack/blob/main/aws.md)
+- 📽️ [기능 구현 영상 (회원/보안 파트)](https://youtu.be/pWBEOX9JKqc)
 
 
 
