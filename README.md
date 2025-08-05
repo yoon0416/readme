@@ -51,7 +51,7 @@
 | **Infra & 보안** | AWS EC2, S3, Nginx, PM2, Linux, Shell Script, crontab, ffuf, Hydra, TruffleHog, curl       | EC2 배포 자동화, 서버 장애 복구, 보안 미들웨어 + 무작위 대입 공격 탐지, curl 기반 보안 로그 점검 |
 | **Database**   | MySQL, MyBatis, JPA, Sequelize, Soft Delete, node-cron                                     | 유저 테이블 소프트 딜리트 + 30일 복구 구조, 탈퇴 로그 관리, 회원/결제 관련 테이블 연관관계 설계     |
 | **CI/CD**      | Shell Script + crontab                                                                     | EC2 자동 재시작 스크립트 구성, 서버 구동 시간 117s → 26s 단축                     |
-| **CS - 네트워크** | TCP/IP, 쿠키/세션, 포트, CORS, 요청/응답 흐름 | 프론트-백 분리 환경에서 CORS 정책 적용, 인증/요청 헤더 흐름 설계, 세션/쿠키 기반 인증 처리 경험 |
+| **CS - 네트워크** | TCP/IP, 쿠키/세션, 포트, CORS, 요청/응답 흐름 |프론트-백 RESTful api 사용하여 연결, 프론트-백 분리 환경에서 CORS 정책 적용, 인증/요청 헤더 흐름 설계, 세션/쿠키 기반 인증 처리 경험 |
 | **CS - 자료구조** | B-Tree (MySQL 인덱스) | `WHERE` 조건 기반 인덱스 조회로 `O(log N)` 수준의 검색 성능 확보 |
 | **CS - 보안**    | XSS, SQL Injection, JWT, 암호화(Bcrypt/Argon2), 인증 흐름 설계                                      | 공격 대응 미들웨어 설계, 관리자 인증 분기, 유저 상태 기반 로그인 차단, 해시 알고리즘 분리 적용       |
 
