@@ -1,5 +1,5 @@
 # 👋 About Me
-> 시키는 일만 하는 '직장인'이 아니라, 꾸준히 공부하며 성장하는 '개발자'로
+> 시키는 일만 하는 '직장인'이 아니라, 꾸준히 공부하며 성장하는 '개발자'로 <br>
 ![Logic](https://img.shields.io/badge/System_Logic-ON-blue?style=flat-square)
 ![Security](https://img.shields.io/badge/Security-HIGH-critical?style=flat-square)
 ![Upgrade](https://img.shields.io/badge/Growth-Daily-success?style=flat-square)
