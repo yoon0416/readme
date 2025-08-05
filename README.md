@@ -1,7 +1,8 @@
 # 👋 About Me
-![Design-Driven](https://img.shields.io/badge/Focus-Flow_Design-blue?style=flat-square)
-![Security-First](https://img.shields.io/badge/Security-Top_Priority-critical?style=flat-square)
-![Keep-Growing](https://img.shields.io/badge/Growth-Relentless-success?style=flat-square)
+![Design](https://img.shields.io/badge/Design-HIGH-blue?style=flat-square)
+![Security](https://img.shields.io/badge/Security-ON-critical?style=flat-square)
+![Growth](https://img.shields.io/badge/Growth-ALWAYS-success?style=flat-square)
+
 
 
 
