@@ -28,6 +28,7 @@
 ---
 
 ## 🛠 기술 역량 (Tech Stack)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact&hide=html)](https://github.com/anuraghazra/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact&hide=html)](https://github.com/anuraghazra/github-readme-stats)<br>
 ![할로](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&repo=halo_me&layout=compact)<br>
