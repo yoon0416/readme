@@ -31,18 +31,14 @@
 
 [![기술스택](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact&hide=html)](https://github.com/anuraghazra/github-readme-stats)
 
-| 영역             | 기술 및 도구                                                                                  |
-|------------------|-----------------------------------------------------------------------------------------------|
-| **Backend**       | Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, Python                           |
-|                  | Session + JWT 혼합 인증 구조, Argon2, bcrypt                                                 |
-|                  | REST API, @PreAuthorize, OAuth2                                                               |
-| **Frontend**      | React, Next.js, Redux, Axios                                                                 |
-|                  | JWT 저장/삭제 도메인 관리, 상태관리 설계                                                    |
-| **Infra & 보안**   | AWS EC2, S3, Nginx, PM2, Linux(Ubuntu), crontab, Shell Script                               |
-|                  | ffuf, Hydra, TruffleHog, curl 등 보안 테스트 도구                                            |
-| **Database**      | MySQL, MyBatis, Sequelize                                                                    |
-|                  | Soft Delete, backup table, 스케줄링 기반 자동화                                              |
-| **CI/CD**         | Shell Script + crontab 기반 자동 배포 스크립트 구현 (117s → 26s 단축)                        |
+| 영역             | 기술 및 도구                                                                                                 |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| **Backend**       | Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, Python <br> Session + JWT 혼합 인증 구조, Argon2, bcrypt <br> REST API, @PreAuthorize, OAuth2 |
+| **Frontend**      | React, Next.js, Redux, Axios <br> JWT 저장/삭제 도메인 관리, 상태관리 설계                                  |
+| **Infra & 보안**   | AWS EC2, S3, Nginx, PM2, Linux(Ubuntu), crontab, Shell Script <br> ffuf, Hydra, TruffleHog, curl 등 보안 테스트 도구  |
+| **Database**      | MySQL, MyBatis, Sequelize <br> Soft Delete, backup table, 스케줄링 기반 자동화                                |
+| **CI/CD**         | Shell Script + crontab 기반 자동 배포 스크립트 구현 (117s → 26s 단축)                                        |
+
 
 
 ---
