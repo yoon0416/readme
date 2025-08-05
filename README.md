@@ -44,13 +44,49 @@
 
 ## 🛠 기술 역량 (Tech Stack)
 
-| 영역             | 기술 및 도구 |
-|------------------|-------------------------------------------------------------------------------------------------------------------|
-| **Backend**      | Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, Python, REST API, OAuth2, @PreAuthorize |
-| **Frontend**     | React, Next.js, Redux, Axios, Styled-components |
-| **Infra & 보안** | AWS EC2, S3, Nginx, PM2, Linux, Shell Script, crontab, ffuf, Hydra, TruffleHog, curl |
-| **Database**     | MySQL, MyBatis, Sequelize, Soft Delete, Backup Table, node-cron |
-| **CI/CD**        | Shell Script + crontab 자동화 (서비스 구동 시간 117s → 26s 단축) |
+| 영역             | 기술 및 도구                                                                                    | 적용 사례 / 설계 경험                                                  |
+| -------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
+| **Backend**    | Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, REST API, OAuth2, @PreAuthorize | 4중 인증 구조 설계 (JWT + 세션), 사용자 상태 기반 로그인 차단, 관리자 인증 분기 설계         |
+| **Frontend**   | React, Next.js, Redux, Axios, Styled-components                                            | 로그인/회원가입/결제 UI 구현, 상태관리 및 API 연동, 관리자 전용 페이지 구현                |
+| **Infra & 보안** | AWS EC2, S3, Nginx, PM2, Linux, Shell Script, crontab, ffuf, Hydra, TruffleHog, curl       | EC2 배포 자동화, 서버 장애 복구, 보안 미들웨어 + 무작위 대입 공격 탐지, curl 기반 보안 로그 점검 |
+| **Database**   | MySQL, MyBatis, JPA, Sequelize, Soft Delete, node-cron                                     | 유저 테이블 소프트 딜리트 + 30일 복구 구조, 탈퇴 로그 관리, 회원/결제 관련 테이블 연관관계 설계     |
+| **CI/CD**      | Shell Script + crontab                                                                     | EC2 자동 재시작 스크립트 구성, 서버 구동 시간 117s → 26s 단축                     |
+| **CS - 네트워크**  | TCP/IP, 쿠키/세션, 포트, CORS, 요청/응답 흐름                                                          | 로그인/인증 처리 구조 설계, CORS 허용 정책 설계, 프론트-백엔드 통신 흐름 설계               |
+| **CS - 운영체제**  | 프로세스/스레드, 동기 vs 비동기, 리소스 관리, crontab                                                       | 자동화 배치 구성, 서버 프로세스 재시작 스크립트 작성, 리소스 최적화 설정                     |
+| **CS - 자료구조** | B-Tree (MySQL 인덱스) | `WHERE` 조건 기반 인덱스 조회로 `O(log N)` 수준의 검색 성능 확보 |
+| **CS - 보안**    | XSS, SQL Injection, JWT, 암호화(Bcrypt/Argon2), 인증 흐름 설계                                      | 공격 대응 미들웨어 설계, 관리자 인증 분기, 유저 상태 기반 로그인 차단, 해시 알고리즘 분리 적용       |
+
+<details>
+<summary><strong>SQL 조회와 시간복잡도 비교</strong></summary>
+
+<br>
+
+| 항목                | 네가 실제 사용한 쿼리                         | 설명                                                                 | 시간복잡도   |
+|---------------------|----------------------------------------------|----------------------------------------------------------------------|--------------|
+| WHERE 조건 검색      | `SELECT * FROM account WHERE email = ?`      | `email`에 인덱스가 있으면 MySQL은 **B-Tree** 구조로 탐색 시작              | `O(log N)`   |
+| Primary Key 조회     | `SELECT * FROM account WHERE id = ?`         | PK 컬럼은 기본적으로 인덱스가 걸림 → 빠른 탐색 가능                            | `O(log N)`   |
+| 정렬 없이 전체 탐색 | `SELECT * FROM account`                      | 인덱스를 사용하지 않고 전체 테이블을 순차 탐색 (Full Table Scan)         | `O(N)`       |
+
+- 🔍 B-Tree 인덱스란?
+  - MySQL(InnoDB)의 기본 인덱스 구조.
+  - 균형 잡힌 트리 구조로 되어 있어서, 검색 시 루트 노드 → 중간 노드 → 리프 노드까지 타고 내려가며 빠르게 탐색 가능.
+  - 정렬된 상태로 저장되며, 범위 조건 검색에도 유리.
+  - 평균 시간복잡도는 O(log N).
+
+- ❗ 인덱스가 없다면?
+  - SELECT * FROM account처럼 인덱스를 타지 않으면, 테이블 처음부터 끝까지 한 줄씩 확인하는 선형 탐색이 됨.
+  - 이 경우 시간복잡도는 O(N), 즉 데이터가 많아질수록 성능 급하락.
+
+#### 사용예시
+
+| 사용 맥락        | 쿼리 예시                                   | 설명                  |
+| ------------ | --------------------------------------- | ------------------- |
+| 🔐 로그인 처리    | `SELECT * FROM account WHERE email = ?` | 이메일 인덱스 기반 빠른 탐색 사용 |
+| 👤 관리자 상세 조회 | `SELECT * FROM account WHERE id = ?`    | PK 탐색으로 즉시 조회 가능    |
+
+
+</details>
+
 
 
 Back-End : <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white"/><img src="https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/MyBatis-000000?style=flat&logo=apache&logoColor=white"/> <img src="https://img.shields.io/badge/JPA-59666C?style=flat&logo=hibernate&logoColor=white"/>
