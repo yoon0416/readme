@@ -89,13 +89,13 @@
 
 
 
-Back-End : <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white"/><img src="https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/MyBatis-000000?style=flat&logo=apache&logoColor=white"/> <img src="https://img.shields.io/badge/JPA-59666C?style=flat&logo=hibernate&logoColor=white"/>
+Back-End : <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/MyBatis-000000?style=flat&logo=apache&logoColor=white"/> <img src="https://img.shields.io/badge/JPA-59666C?style=flat&logo=hibernate&logoColor=white"/>
 
-Front-End : <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black"/><img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white"/><img src="https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux&logoColor=white"/><img src="https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white"/>
+Front-End : <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black"/> <img src="https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white"/> <img src="https://img.shields.io/badge/Redux-764ABC?style=flat&logo=redux&logoColor=white"/> <img src="https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios&logoColor=white"/>
 
-Infra / DevOps : <img src="https://img.shields.io/badge/AWS EC2-FF9900?style=flat&logo=amazonaws&logoColor=white"/><img src="https://img.shields.io/badge/AWS S3-569A31?style=flat&logo=amazonaws&logoColor=white"/><img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black"/><img src="https://img.shields.io/badge/Shell Script-4EAA25?style=flat&logo=gnubash&logoColor=white"/><img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white"/>
+Infra / DevOps : <img src="https://img.shields.io/badge/AWS EC2-FF9900?style=flat&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/AWS S3-569A31?style=flat&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black"/> <img src="https://img.shields.io/badge/Shell Script-4EAA25?style=flat&logo=gnubash&logoColor=white"/> <img src="https://img.shields.io/badge/Nginx-009639?style=flat&logo=nginx&logoColor=white"/>
 
-Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white"/><img src="https://img.shields.io/badge/Bcrypt-121212?style=flat&logo=security&logoColor=white"/><img src="https://img.shields.io/badge/Argon2-33AADD?style=flat&logo=veracrypt&logoColor=white"/><img src="https://img.shields.io/badge/Security Testing Tools-000000?style=flat&logo=kali-linux&logoColor=white"/>
+Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&logo=jsonwebtokens&logoColor=white"/> <img src="https://img.shields.io/badge/Bcrypt-121212?style=flat&logo=security&logoColor=white"/> <img src="https://img.shields.io/badge/Argon2-33AADD?style=flat&logo=veracrypt&logoColor=white"/> <img src="https://img.shields.io/badge/Security Testing Tools-000000?style=flat&logo=kali-linux&logoColor=white"/>
 
 ---
 
