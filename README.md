@@ -1,21 +1,26 @@
 # 👋 About Me
-![Flow](https://img.shields.io/badge/System_Flow-ON-blue?style=flat-square)
-![Security](https://img.shields.io/badge/Security-ON-critical?style=flat-square)
-![Growth](https://img.shields.io/badge/Growth-ALWAYS-success?style=flat-square)
+
+![Logic](https://img.shields.io/badge/System_Logic-ON-blue?style=flat-square)
+![Security](https://img.shields.io/badge/Security-HIGH-critical?style=flat-square)
+![Upgrade](https://img.shields.io/badge/Growth-Daily-success?style=flat-square)
+
+안녕하세요, 로직부터 배포까지 **흐름을 직접 설계하는 백엔드 개발자 안윤기**입니다.
+
+시스템은 믿을 수 있는 구조 위에서만 돌아간다고 믿습니다.  
+그래서 저는 코드보다 먼저 **전체 흐름을 설계**하고,  
+장애 발생 시에는 **로그부터 구조까지 끝까지 추적**합니다.
+
+그리고 그 모든 과정은 결국 **성장으로 연결**된다고 생각합니다.
 
 
+####  주요 경험 및 기술
 
-
-안녕하세요, 흐름을 먼저 설계하고 끝까지 책임지는 백엔드 개발자 **안윤기**입니다.  
-저는 시스템의 신뢰는 '정확한 로직과 단단한 구조'에서 시작된다고 믿습니다.  
-**기능 구현에 그치지 않고**, 장애 발생 시 구조부터 로그까지 **집요하게 추적하며**,  
-실제 운영 환경에서의 문제 해결 과정을 통해 **계속해서 성장해왔습니다.**
-
-- 🌱 CS 기반 구조 이해 및 실무 설계 경험  
-- 🛡️ JWT + 세션 혼합 하이브리드 인증 구조 구현  
-- ☁️ AWS EC2 + S3 + Nginx + Shell Script 배포 및 인프라 구축  
-- 🔐 보안 감수성 기반 미들웨어 및 공격 대응 로직 설계  
-- 🧠 구조부터 로그 추적까지, 장애 시 전방위 분석 습관  
+- 🌱 **CS 기반 구조 설계** 및 실무 수준의 아키텍처 구성  
+- 🛡️ **4중 인증 기반 하이브리드 구조 구현**  
+  (유저: JWT + bcrypt / 관리자: 세션 + Argon2 / 로그인 상태 자동 판단 포함)  
+- ☁️ **AWS EC2 + S3 + Nginx + Shell Script 기반 배포 자동화**  
+- 🔐 **보안 감수성 기반 미들웨어 및 이상행동 대응 로직 설계**  
+- 🧠 **장애 발생 시 전체 흐름, 로그, 구조 단위까지 추적하는 습관화**
 
 
 ---
