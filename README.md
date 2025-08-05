@@ -29,6 +29,7 @@
 
 ## 🛠 기술 역량 (Tech Stack)
 
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 **Backend**  
 - Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, python  
 - Session + JWT 혼합 인증 구조, Argon2, bcrypt  
@@ -52,7 +53,6 @@
 ---
 ## GitHub 활동 요약
 [![yoon's GitHub stats](https://github-readme-stats.vercel.app/api?username=yoon0416)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=yoon0416&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 - 2025년 기준 약 1,300회 이상 커밋하며 꾸준한 Git 기반 개발 활동 경험
 - 90건 이상의 Pull Request를 통해 협업 중심 개발 환경에 익숙함
 - 외부 레포지토리 3곳 이상 기여 경험 보유
