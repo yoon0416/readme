@@ -144,11 +144,16 @@ Auth / Security : <img src="https://img.shields.io/badge/JWT-000000?style=flat&l
      - 문제: EC2 서버에서 java -jar 실행 시 시간대 문제로 로직 오작동 발생 (예: 이틀 전 날짜로 저장)
      - 원인: 기본 시스템 시간대가 UTC로 설정되어 있었고, Spring은 이 시간 기준으로 처리
      - 해결: -Duser.timezone=Asia/Seoul 옵션을 java 실행 시 명시하여 정상 작동
+     - 
 - **트러블슈팅 4**:
      - 문제 : EC2 인스턴스 재부팅 시, 백엔드(Spring Boot)와 프론트(Next.js) 기동까지 총 117초(1분 51초) 소요됨
      - 원인 : 백/프론트가 하나의 스크립트에서 순차 실행되고, 프론트는 매번 npm install, npm run build를 불필요하게 반복 수행함
      - 해결 : start_all.sh에서 백/프론트 병렬 실행(& + wait),. node_modules, .next 존재 여부 확인 후 불필요한 작업 생략, crontab @reboot 등록으로 자동 실행 → 최종 서비스 도달 시간 26초, 기존 대비 77% 속도 단축
-
+     - 
+- **트러블슈팅 5**:
+     - 문제 : 특정 권한이 있는 계정 또는 침입자가 update, delete 쿼리를 이용하여 로그 내용을 조작 혹은 삭제가 가능했음
+     - 원인 : 테이블에 대한 조작 방지 로직 미비, 접근 제어로는 충분하지 않으며, SQL 직접 접근 시 차단 수단 없음
+     - 해결 : AWS ec2에서 mysql 열고 테이블에 트리거 기반 조작 차단 로직 추가, BEFORE UPDATE, BEFORE DELETE 트리거에서 쿼리 실행 전 예외 발생,SIGNAL SQLSTATE '45000’ 명령으로 MySQL 내부에서 오류 유도, 실행 자체를 차단
 
 ###  협업 및 회고
 
