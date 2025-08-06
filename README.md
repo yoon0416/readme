@@ -50,12 +50,12 @@
 | -------------- | ------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
 | **Backend**    | Java, Spring Boot, Spring Security, MyBatis, JPA, Node.js, REST API, OAuth2, @PreAuthorize | 4중 인증 구조 설계 (JWT + 세션), 사용자 상태 기반 로그인 차단, 관리자 인증 분기 설계         |
 | **Frontend**   | React, Next.js, Redux, Axios, Styled-components                                            | 로그인/회원가입/결제 UI 구현, 상태관리 및 API 연동, 관리자 전용 페이지 구현                |
-| **Infra & 보안** | AWS EC2, S3, Nginx, PM2, Linux, Shell Script, crontab, ffuf, Hydra, TruffleHog, curl, JWT, Bcrypt, Argon2, 세션 인증, OAuth2,       | 4중 인증 구조 설계(JWT+Bcrypt / 세션+Argon2), 로그인 상태 자동 판단, 관리자 분기 및 세션 강제 종료 로직,,EC2 배포 자동화, 서버 장애 복구, 보안 미들웨어 + 무작위 대입 공격 탐지, curl을 활용한 서버 로그 기반 보안 점검 |
+| **Infra & 보안** | AWS EC2, S3, Nginx, PM2, Linux, Shell Script, crontab, ffuf, Hydra, TruffleHog, curl     | EC2 배포 자동화, 서버 장애 복구, 보안 미들웨어 + 무작위 대입 공격 탐지, curl을 활용한 서버 로그 기반 보안 점검 |
 | **Database**   | MySQL, MyBatis, JPA, Sequelize, Soft Delete, node-cron                                     | 유저 테이블 소프트 딜리트 + 30일 복구 구조, 탈퇴 로그 관리, 회원/결제 관련 테이블 연관관계 설계     |
 | **CI/CD**      | Shell Script + crontab                                                                     | EC2 자동 재시작 스크립트 구성, 서버 구동 시간 117s → 26s 단축                     |
 | **CS - 네트워크** | TCP/IP, 쿠키/세션, 포트, CORS, 요청/응답 흐름 |RESTful API 기반 프론트-백 연결 구조 설계, CORS 정책 적용 및 인증/요청 헤더 흐름 설계 , 세션/쿠키 기반 인증 처리 경험 |
 | **CS - 자료구조** | B-Tree (MySQL 인덱스) | `WHERE` 조건 기반 인덱스 조회로 `O(log N)` 수준의 검색 성능 확보 |
-| **CS - 보안**    | XSS, SQL Injection, JWT, 암호화(Bcrypt/Argon2), 인증 흐름 설계                                      | 공격 대응 미들웨어 설계, 관리자 인증 분기, 유저 상태 기반 로그인 차단, 해시 알고리즘 분리 적용       |
+| **CS - 보안**    | XSS, SQL Injection, JWT, 암호화(Bcrypt/Argon2), 인증 흐름 설계  , 세션 인증, OAuth2,                                     | 4중 인증 구조 설계(JWT+Bcrypt / 세션+Argon2), 로그인 상태 자동 판단, 관리자 분기 및 세션 강제 종료 로직, 공격 대응 미들웨어 설계, 관리자 인증 분기, 유저 상태 기반 로그인 차단, 해시 알고리즘 분리 적용       |
 
 <details>
 <summary><strong>SQL 조회와 시간복잡도 비교</strong></summary>
