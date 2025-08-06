@@ -30,6 +30,7 @@
 
 | 구분 | 내용 |
 |------|------|
+| Name | 안윤기 |
 | Email | zgha16@gmail.com |
 | GitHub | https://github.com/yoon0416 |
 
